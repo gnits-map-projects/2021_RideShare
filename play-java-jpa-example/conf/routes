@@ -1,0 +1,35 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.PersonController.index()
+POST    /person                     controllers.PersonController.addPerson()
+POST     /persons                   controllers.ValidateController.getPerson()
+POST     /deleteRollno              controllers.CrideController.delete()
+POST     /delperson                 controllers.PersonController.deletePersons()
+POST    /personVal                  controllers.PersonController.login()
+POST    /personDet                  controllers.PersonController.login1()
+POST    /addRide                    controllers.CrideController.addCride()
+POST    /update                     controllers.PersonController.updatePerson()
+POST    /check                      controllers.PersonController.checkRollno()
+POST    /find                       controllers.CrideController.findRide()
+POST    /history                    controllers.MatchedController.History()
+POST    /adding                     controllers.CrideController.addRide()
+POST  /match                        controllers.MatchedController.addMride()
+POST  /rideDet                      controllers.MatchedController.rideDetails()
+POST  /incVacancy                   controllers.CrideController.incVacancy()
+POST  /decVacancy                   controllers.CrideController.decVacancy()
+POST   /del                         controllers.MatchedController.deleteRide()
+POST    /checkRide                  controllers.MatchedController.checkRide()
+POST    /addRequest                 controllers.RequestController.add()
+POST    /addValidate                controllers.ValidateController.add()
+GET     /list                       controllers.RequestController.getPersons()
+POST    /deleteRequest              controllers.RequestController.deletePersons()
+POST    /reply                      controllers.CrideController.replyRide()
+POST    /date                      controllers.CrideController.dateRide()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
