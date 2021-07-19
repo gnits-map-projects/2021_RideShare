@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  
+}
+
+button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 5px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  margin-left:30%;
+  
+}
+
+h2{
+  color:#000000;
+}
+.profile{
+  position: relative;
+}
+.pcontainer {
+  position: absolute;
+  left:27%;
+  top: 20%;
+  border-radius: 5px;
+  border: black solid 2px;
+  width:700px;
+  height: 450px;
+}
+
+.collabel {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  margin-left:100px;
+}
+
+.colvalue {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  margin-left:30px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
